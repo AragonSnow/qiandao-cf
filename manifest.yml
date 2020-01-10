@@ -10,3 +10,4 @@ applications:
   - route: qiandao-cf.us-south.cf.appdomain.cloud
   stack: cflinuxfs3
   command: python ./run.py
+  health-check-type: http
