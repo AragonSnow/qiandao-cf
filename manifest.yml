@@ -1,0 +1,12 @@
+---
+applications:
+- name: qiandao-cf
+  buildpacks:
+  - python_buildpack
+  disk_quota: 1G
+  instances: 1
+  memory: 256M
+  routes:
+  - route: qiandao-cf.us-south.cf.appdomain.cloud
+  stack: cflinuxfs3
+  command: python ./run.py
